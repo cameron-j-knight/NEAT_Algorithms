@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Character Standing/Worm.unity
+  isLoaded: 1
+  isActive: 1

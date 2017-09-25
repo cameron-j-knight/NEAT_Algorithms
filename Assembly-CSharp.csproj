@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{3FCB8A85-2CB6-205F-DCE2-9BB59DC2A579}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Character Standing\Agar.cs" />
+     <Compile Include="Assets\Character Standing\AgarEvaluator.cs" />
+     <Compile Include="Assets\Character Standing\AgarExpirament.cs" />
+     <Compile Include="Assets\Character Standing\AgarOptimizer.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\BaseCharacterJoints.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\BuildJoint.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\BuildMuscle.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\BuildPart.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\CameraRotate.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\CharacterBuilder.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\CharacterFileBrowser.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\CharacterPart.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\ColorHSV.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\FakeJointControler.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\Joint.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\LassoTool.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\Muscle.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\MuscleGroup.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\MusclePart.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\MuscleSystem.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\PartCubeControler.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\PartJointControler.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\RigidBodyData.cs" />
+     <Compile Include="Assets\Character Standing\CharacterBuilder\UndoObjectData.cs" />
+     <Compile Include="Assets\FileBrowser\Script\FileBrowser.cs" />
+     <Compile Include="Assets\FileBrowser\Script\testFileBrowser.cs" />
+     <Compile Include="Assets\NodeView\Connector.cs" />
+     <Compile Include="Assets\NodeView\GenomeViewController.cs" />
+     <Compile Include="Assets\NodeView\Node.cs" />
+     <Compile Include="Assets\OtherStuff\addforceTest.cs" />
+     <Compile Include="Assets\OtherStuff\CubeController.cs" />
+     <Compile Include="Assets\OtherStuff\EditorControler.cs" />
+     <Compile Include="Assets\OtherStuff\GoalControler.cs" />
+     <Compile Include="Assets\OtherStuff\NeatNoHyperExpirament.cs" />
+     <Compile Include="Assets\OtherStuff\SimpleEvaluator.cs" />
+     <Compile Include="Assets\OtherStuff\SimpleExperiment.cs" />
+     <Compile Include="Assets\SetBOundPosition.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\AuxFitnessInfo.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\CoordinateVector.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\EvaluationInfo.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\FitnessInfo.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\GenomeFitnessComparer.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\ICoevolutionPhenomeEvaluator.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\IDistanceMetric.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\IEvolutionAlgorithm.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\IGenome.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\IGenomeDecoder.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\IGenomeFactory.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\IGenomeListEvaluator.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\IPhenomeEvaluator.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\ISpeciationStrategy.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\ParallelCoevolutionListEvaluator.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\RunState.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\SelectiveGenomeListEvaluator.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\SerialGenomeListEvaluator.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\Specie.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\UnityAstroidEvaluator.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\UnityListEvaluator.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\UnityMultiLayerEvaluator.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\UnityParallelListEvaluator.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\UnitySingleGenomeEvaluator.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\UpdateMode.cs" />
+     <Compile Include="Assets\SharpNEAT\Core\UpdateScheme.cs" />
+     <Compile Include="Assets\SharpNEAT\Coroutiner.cs" />
+     <Compile Include="Assets\SharpNEAT\Decoders\CyclicNetworkFactory.cs" />
+     <Compile Include="Assets\SharpNEAT\Decoders\FastAcyclicNetworkFactory.cs" />
+     <Compile Include="Assets\SharpNEAT\Decoders\FastCyclicNetworkFactory.cs" />
+     <Compile Include="Assets\SharpNEAT\Decoders\NetworkActivationScheme.cs" />
+     <Compile Include="Assets\SharpNEAT\DistanceMetrics\DistanceMetricUtils.cs" />
+     <Compile Include="Assets\SharpNEAT\DistanceMetrics\EuclideanDistanceMetric.cs" />
+     <Compile Include="Assets\SharpNEAT\DistanceMetrics\ManhattanDistanceMetric.cs" />
+     <Compile Include="Assets\SharpNEAT\EvolutionAlgorithms\AbstractGenerationalAlgorithm.cs" />
+     <Compile Include="Assets\SharpNEAT\EvolutionAlgorithms\NeatAlgorithmStats.cs" />
+     <Compile Include="Assets\SharpNEAT\EvolutionAlgorithms\NeatEvolutionAlgorithm.cs" />
+     <Compile Include="Assets\SharpNEAT\EvolutionAlgorithms\NeatEvolutionAlgorithmParameters.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\AcyclicNetworkDepthAnalysis.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\ConnectionEndpointsStruct.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\ConnectionList.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\CyclicNetworkDepthAnalysis.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\CyclicNetworkTest.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\DefaultActivationFunctionLibrary.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\IActivationFunction.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\IActivationFunctionLibrary.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\IConnectionList.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\INetworkConnection.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\INetworkDefinition.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\INetworkNode.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\INodeList.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\NetworkConnection.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\NetworkConnectivityData.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\NetworkDefinition.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\NetworkDepthInfo.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\NetworkNode.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\NetworkXmlIO.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\NodeConnectivityData.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\NodeList.cs" />
+     <Compile Include="Assets\SharpNEAT\Network\NodeType.cs" />
+     <Compile Include="Assets\SharpNEAT\Optimizer.cs" />
+     <Compile Include="Assets\SharpNEAT\Phenomes\IBlackBox.cs" />
+     <Compile Include="Assets\SharpNEAT\Phenomes\ISignalArray.cs" />
+     <Compile Include="Assets\SharpNEAT\Phenomes\MappingSignalArray.cs" />
+     <Compile Include="Assets\SharpNEAT\Phenomes\SignalArray.cs" />
+     <Compile Include="Assets\SharpNEAT\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\SharpNEAT\SharpNeatException.cs" />
+     <Compile Include="Assets\SharpNEAT\SpeciationStrategies\GenomeDistancePair.cs" />
+     <Compile Include="Assets\SharpNEAT\SpeciationStrategies\KMeansClusteringStrategy.cs" />
+     <Compile Include="Assets\SharpNEAT\SpeciationStrategies\RandomClusteringStrategy.cs" />
+     <Compile Include="Assets\SharpNEAT\SpeciationStrategies\SpeciationUtils.cs" />
+     <Compile Include="Assets\SharpNEAT\UnitController.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\BoxMullerGaussianSampler.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\CircularBuffer.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\DoubleCircularBufferWithStats.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\FastRandom.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\FrequencyDistributionData.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\KeyedCircularBuffer.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\Point2DDouble.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\RouletteWheel.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\RouletteWheelLayout.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\UInt32IdGenerator.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\Utilities.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\XmlIoUtils.cs" />
+     <Compile Include="Assets\SharpNEAT\Utility\ZigguratGaussianSampler.cs" />
+     <None Include="Assets\FileBrowser\readme.txt" />
+     <None Include="Assets\Resources\Cube.config.xml" />
+     <None Include="Assets\Resources\experiment.config.xml" />
+     <None Include="Assets\Resources\Astro.config.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
